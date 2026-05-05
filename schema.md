@@ -1,4 +1,5 @@
 # Schema Design Notes
+<img width="1362" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/02ac83d3-08fb-4072-bdc7-2f00d7ccd1c3" />
 
 ## 1. Cross-platform product identity
 
