@@ -25,6 +25,7 @@ npm run dev
 ```
 
 ---
+<img width="1864" height="838" alt="image" src="https://github.com/user-attachments/assets/f783bd7b-009a-4712-a86f-37a0cf270405" />
 
 ## Stack
 
