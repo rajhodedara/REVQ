@@ -1,0 +1,114 @@
+.price-table {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.pt-header {
+  display: grid;
+  grid-template-columns: 200px 90px 90px 100px 110px 70px;
+  padding: 10px 16px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.pt-header > div {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+}
+
+.pt-row {
+  display: grid;
+  grid-template-columns: 200px 90px 90px 100px 110px 70px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.pt-row:last-child { border-bottom: none; }
+
+.pt-row:hover { background: var(--surface-2); }
+
+.pt-row.best {
+  background: var(--row-dim, var(--accent-dim));
+  border-left: 2px solid var(--row-color, var(--accent));
+  padding-left: 14px;
+}
+
+.pt-row.not-listed { opacity: 0.4; }
+
+.pt-cell-platform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.platform-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.platform-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.best-badge {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pt-cell {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.pt-cell.mono { font-family: var(--font-mono); }
+.pt-cell.muted { color: var(--text-2); }
+.pt-cell.accent-text { color: var(--accent); }
+
+.discount-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  color: var(--text-2);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.active {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+.status-dot.inactive { background: var(--border-2); }
+
+.not-listed-label {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-3);
+}

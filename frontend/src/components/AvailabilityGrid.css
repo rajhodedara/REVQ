@@ -1,0 +1,141 @@
+.avail-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Summary cards ── */
+.avail-summary {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.avail-card {
+  flex: 1;
+  min-width: 160px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.avail-card-platform {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.avail-bar-wrap {
+  height: 3px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.avail-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+
+.avail-card-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.avail-big {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.avail-denom {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.avail-oos-note {
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #ff6b6b;
+}
+
+/* ── Pincode table ── */
+.pincode-table {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.pin-header {
+  display: flex;
+  padding: 10px 16px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  gap: 0;
+}
+
+.pin-header > div {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pin-cell-code {
+  width: 110px;
+  flex-shrink: 0;
+  color: var(--text-3);
+  font-size: 10px;
+}
+
+.pin-cell-code.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.pin-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.pin-row {
+  display: flex;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  transition: background 0.1s;
+}
+
+.pin-row:last-child { border-bottom: none; }
+.pin-row:hover { background: var(--surface-2); }
+
+.pin-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pin-status.in-stock { color: var(--accent); }
+.pin-status.oos      { color: #ff6b6b; }
+.pin-status.na       { color: var(--text-3); }
+
+.pin-qty {
+  font-size: 10px;
+  color: var(--text-3);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
